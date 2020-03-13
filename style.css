@@ -1,19 +1,24 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
 body {
-    background-color: lightslategrey;
-    color:white
+    background-color:lightslategrey;
+    color: black;
+    
 }
 
 h1 {
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: 48px;
     padding-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
     
 }
 
 #highScores {
-    font-family: 'Noto Sans JP', sans-serif;
+    color:white;
  
 }
 
@@ -23,14 +28,81 @@ h1 {
 
 .card-text {
     color: black;
-    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     
 }
 
 .btn {
-    background-color: coral;
+    background-color: lightsalmon;
     border: 2px solid black;
-    font-family: 'Noto Sans JP', sans-serif;
+    
+    
 
 }
+
+#text{
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  #body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn:hover {
+    border-color:white;
+  }
+
+  #question {
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  #start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .hide {
+      display:none;
+  }
