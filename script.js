@@ -90,7 +90,7 @@ startButton.onclick = function  () {
 function endGame(){
   mainContainer.classList.add('hide');
   var highScore = document.createElement('p');
-  highScore.innerText = "these are the high scores";
+  highScore.innerText = "Your score is: " +score;
   highScore.setAttribute("style", "text-align:center");
   firstContainer.appendChild(highScore);
   }
@@ -151,10 +151,9 @@ function selectAnswer(e) {
   })
   if (showQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide');
-  } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide');
-  alert('You completed the quiz! Your score is ' + score + '! Click High Scores to save your score');
+  } else { 
+  alert('You completed the quiz!');
+  endGame();
   };
 };
 
