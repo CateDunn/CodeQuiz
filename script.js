@@ -5,6 +5,8 @@ var questionElement = document.getElementById('question');
 var answerButtonsElement = document.getElementById('answer-buttons');
 var timerDisplay = document.getElementById('timer');
 var score = 0;
+var mainContainer = document.getElementById('main-container');
+var firstContainer = document.getElementById('first-container');
 
 var showQuestions, currentQuestionIndex;
 
@@ -71,7 +73,7 @@ function startTimer(duration, display) {
       if (--timer === -1) {
           clearInterval(timerInterval);
           alert("You're out of time!")
-          console.log(timer)
+          endGame ();
       }
 
   }, 1000);
@@ -84,6 +86,14 @@ startButton.onclick = function  () {
       display = document.querySelector('#time');
   startTimer(twoMinutes, display);
 };
+
+function endGame(){
+  mainContainer.classList.add('hide');
+  var highScore = document.createElement('p');
+  highScore.innerText = "these are the high scores";
+  highScore.setAttribute("style", "text-align:center");
+  firstContainer.appendChild(highScore);
+  }
 
 //function that begins the quiz. The start button is hidden, and the area for the questions is shown
 //Question index is set to 0 to show the first question in the question array
