@@ -1,49 +1,23 @@
 # CodeQuiz
-# 04 Web APIs: Code Quiz
-
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-
-## User Story
-
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I am taking a code quiz
 
 WHEN I click the start button
-THEN a timer starts and I am presented with a question
-    - make a start button
-    - make event listener to start the timer and show the first quiz question
-    
-
+THEN a timer starts and I am presented with a question -yes
+    When the 'start' button is clicked, the first question appears and the timer begins counting down.
+   
 WHEN I answer a question
-THEN I am presented with another question
+THEN I am presented with another question - yes
+    Once the user has chosen an answer, they are presented with a 'next' button. Upon clicking the 'next' button, they are taken to the next question.
 
 WHEN I answer a question incorrectly
 THEN time is subtracted from the clock
-    -make a function that subtracts time from the clock when the wrong answer is chosen
+    
 
 WHEN all questions are answered or the timer reaches 0
 THEN the game is over
+    User is alerted that they have finished the game and what their score is once they answer all of the questions. If the timer reaches zero, the user is alerted that they are out of time.
 
 WHEN the game is over
 THEN I can save my initials and score
-```
 
-The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
-### Review
-
-You are required to submit the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.

@@ -1,108 +1,72 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-  }
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
 
 body {
-    background-color:lightslategrey;
-    color: black;
-    
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: lightslategray;
 }
 
-h1 {
-    text-align: center;
-    font-size: 48px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    
-}
-
-#highScores {
-    color:white;
- 
-}
-
-.card-body{
-    background-color: lightgrey;
-}
-
-.card-text {
-    color: black;
-    text-align: center;
-    
-}
-
-.btn {
-    background-color: lightsalmon;
-    border: 2px solid black;
-    
-    
+h1{
+  text-align: center;
+  font-size: 40px;
 
 }
 
-#text{
-    padding-bottom: 50px;
-    text-align: center;
-    font-size: 24px;
-}
-
-h2 {
-    text-align: center;
-    
-
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
 }
 
 .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
 
-  #body{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-  }
+.btn {
+  border: 1px solid black;
+  background-color: lightsalmon;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+ 
+}
 
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.btn:hover {
+  border-color: black;
+}
 
-  .btn:hover {
-    border-color:white;
-  }
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
 
-  #question {
-      text-align: center;
-      font-size: 30px;
-  }
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .start-btn, .next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-
-  #start {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .hide {
-      display:none;
-  }
+.hide {
+  display: none;
+}
