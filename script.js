@@ -59,7 +59,7 @@ nextButton.addEventListener('click', () => {
 // function that defines what the timer does
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
-  setInterval(function () {
+  var timerInterval = setInterval(function () {
       minutes = parseInt(timer / 60, 10);
       seconds = parseInt(timer % 60, 10);
 
@@ -69,11 +69,9 @@ function startTimer(duration, display) {
       timerDisplay.textContent = minutes + ":" + seconds;
 
       if (--timer === -1) {
-      
-        alert("You're out of time!!"), function stopTimer(){
-          clearTimeout(timer);
-        }
-          
+          clearInterval(timerInterval);
+          alert("You're out of time!")
+          console.log(timer)
       }
 
   }, 1000);
