@@ -154,6 +154,7 @@ function selectAnswer(e) {
   } else { 
   alert('You completed the quiz!');
   endGame();
+  timerDisplay.classList.add('hide');
   };
 };
 
