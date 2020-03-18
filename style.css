@@ -70,3 +70,7 @@ h1{
 .hide {
   display: none;
 }
+
+#first-container{
+  text-align: center;
+}

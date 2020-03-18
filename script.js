@@ -90,9 +90,13 @@ startButton.onclick = function  () {
 function endGame(){
   mainContainer.classList.add('hide');
   var highScore = document.createElement('p');
-  highScore.innerText = "Your score is: " +score;
-  highScore.setAttribute("style", "text-align:center");
+  highScore.innerText = "Your score is: " +score + ". Enter your initials below to save your score";
   firstContainer.appendChild(highScore);
+  var initials = document.createElement('input');
+  firstContainer.appendChild(initials);
+  var saveScore = document.createElement('button');
+  saveScore.innerText = "save"
+  firstContainer.appendChild(saveScore);
   }
 
 //function that begins the quiz. The start button is hidden, and the area for the questions is shown
